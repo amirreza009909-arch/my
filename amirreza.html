@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سایت Amirreza</title>
+<style>
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:#f2f2f2;
+}
+
+/* هدر */
+header{
+  background:#222;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+header h1{
+  margin:0;
+}
+header p{
+  margin:5px 0 0 0;
+}
+
+/* منو */
+nav{
+  background:#444;
+  padding:10px;
+  text-align:center;
+}
+nav a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+nav a:hover{
+  color:yellow;
+}
+
+/* بخش‌ها */
+section{
+  background:white;
+  margin:20px auto;
+  padding:20px;
+  max-width:800px;
+  border-radius:10px;
+  box-shadow:0 0 10px #aaa;
+}
+
+/* عکس */
+section img{
+  display:block;
+  margin:20px auto;
+  max-width:100%;
+  border-radius:10px;
+}
+
+/* لامپ */
+#lamp{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background:#555;
+  margin:20px auto;
+  transition:0.3s;
+}
+.on{
+  background:yellow;
+  box-shadow:0 0 30px yellow;
+}
+
+/* دکمه‌ها */
+button{
+  padding:10px 20px;
+  font-size:16px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  margin:5px;
+  background-color:#4CAF50;
+  color:white;
+  transition:0.3s;
+}
+button:hover{
+  background-color:#45a049;
+}
+
+/* فوتر */
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+
+/* ریسپانسیو موبایل */
+@media (max-width:600px){
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+  section{
+    margin:10px;
+    padding:15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>به سایت Amirreza خوش آمدید</h1>
+  <p>اولین سایت واقعی من 🚀</p>
+</header>
+
+<nav>
+  <a href="#home">خانه</a>
+  <a href="#about">درباره ما</a>
+  <a href="#contact">تماس</a>
+</nav>
+
+<section id="home">
+  <h2>خانه</h2>
+  <p>این یک سایت کامل در یک فایل است و شما می‌توانید همه چیز را تست کنید.</p>
+
+  <!-- عکس نمونه -->
+  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=800&q=80" alt="نمونه عکس">
+
+  <div id="lamp"></div>
+  <button onclick="lampOn()">روشن</button>
+  <button onclick="lampOff()">خاموش</button>
+</section>
+
+<section id="about">
+  <h2>درباره ما</h2>
+  <p>من در حال یادگیری طراحی سایت هستم و این سایت را خودم ساختم 💪</p>
+</section>
+
+<section id="contact">
+  <h2>تماس با ما</h2>
+  <p>ایمیل: example@email.com</p>
+</section>
+
+<footer>
+  © 2026 - Amirreza
+</footer>
+
+<script>
+function lampOn(){
+  document.getElementById("lamp").classList.add("on");
+}
+function lampOff(){
+  document.getElementById("lamp").classList.remove("on");
+}
+</script>
+
+</body>
+</html>
